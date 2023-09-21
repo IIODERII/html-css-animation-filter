@@ -1,0 +1,228 @@
+/* es. 1 */
+
+.ex-1-square{
+    transition: all 1.2s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+/* es. 2 */
+
+.ex-2-square{
+    transition: all 1.2s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+/* es. 3 */
+
+.ex-3-square{
+    transition: all 0.5s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/* es. 4 */
+
+.ex-4-square{
+    transition: all 1.2s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+/* es. 5 */
+
+.ex-5-square{
+    transition: all 1.2s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+}
+
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+/* es. 6 */
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+/* es. 7 */
+
+.ex-7-img{
+    transition: all 1.2s;
+}
+
+.ex-7-img:hover{
+    filter: contrast(1);
+    filter: invert(1);
+}
+
+/* es. 8 */
+
+.ex-8-img{
+    transition: all 1.2s;
+}
+
+.ex-8-img:hover{
+    filter: saturate(0.5);
+    filter: sepia(0.8);
+    border-radius: 50px;
+}
+
+/* es. 9 */
+
+.ex-9-img{
+    transition: all 1.2s;
+}
+
+.ex-9-img:hover{
+    filter: saturate(0.5);
+    filter: sepia(0.8);
+    border-radius: 50px;
+    transform: scale(1.5);
+}
+
+/* es. 10 */
+
+.ex-10-icon{
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* es- 11 */
+
+.ex-11-icon:hover{
+    animation-name: spin-and-back;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes spin-and-back{
+    0%{
+        transform: rotate(0);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
+
+/* es- 12 */
+
+.ex-12-top-white{
+    animation-name: move-border-top;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite
+}
+
+@keyframes move-border-top{
+    0%{
+        transform: translateX(0%);
+    }
+
+    50%{
+        transform: translateX(60px);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.ex-12-bottom-white{
+    animation-name: move-border-bottom;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite
+}
+
+@keyframes move-border-bottom{
+    0%{
+        transform: translateX(0%);
+    }
+
+    50%{
+        transform: translateX(-60px);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+}
+
+/* es- 13 */
+
+.well .ex-13-top-white{
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    width: 20px;
+    animation-name: rotate-border-top;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-border-top{
+    0%{top: -10px; left: -10px;}
+    
+    25%{top: -10px; left: 190px;}
+
+    50%{top: 50px; left: 190px;}
+
+    75%{top: 50px; left: -10px;}
+
+    100%{top: -10px; left: -10px;}
+}
+
+.well .ex-13-bottom-white{
+    animation-name: rotate-border-bottom;
+    position: absolute;
+    bottom: -10px;
+    right: -30px;
+    width: 20px;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-border-bottom{
+    0%{bottom: -10px; right: -10px;}
+    
+    25%{bottom: -10px; right: 190px;}
+
+    50%{bottom: 50px; right: 190px;}
+
+    75%{bottom: 50px; right: -10px;}
+
+    100%{bottom: -10px; right: -10px;}
+}
